@@ -1,8 +1,5 @@
-library(tidyverse)
-library(ggplot2)
-
-summary(X2005_2006)
-str(X2012_2013)
+# This will take the raw data from each season( X2005_2006, X2006_2007, etc.)
+# and break each season down into a more usable data frame for our use.
 
 OO5_OO6_adjusted <- select(X2005_2006, Date, HomeTeam, FTHG, AwayTeam, FTAG, 
                            FTR, BbAvH, BbAvA)
