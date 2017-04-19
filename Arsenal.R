@@ -22,8 +22,10 @@ ArsenalHomeLosses <- nrow(Arsenal_Home_Losses)
 ArsenalHomeLosses
   
 ArsenalHomeLossPayout <- mean(Arsenal_Home_Losses$BbAvH)
-ArsenalOpponentHomePayout <- mean(Arsenal_Home_Losses$BbAvA)
 ArsenalHomeLossPayout
+
+ArsenalOpponentHomePayout <- mean(Arsenal_Home_Losses$BbAvA)
+ArsenalOpponentHomePayout
 
 # Arsenal Away Analysis
 Arsenal_Away <- Arsenal %>%
@@ -47,8 +49,22 @@ ArsenalAwayLosses <- nrow(Arsenal_Home_Losses)
 ArsenalAwayLosses
 
 ArsenalAwayLossPayout <- mean(Arsenal_Away_Losses$BbAvA)
-ArsenalOpponentAwayPayout <- mean(Arsenal_Away_Wins$BbAvH)
 ArsenalAwayLossPayout
+
+ArsenalOpponentAwayPayout <- mean(Arsenal_Away_Wins$BbAvH)
+ArsenalOpponentAwayPayout
+
+# Arsenal Home Draws
+Arsenal_Home_Draws <- Arsenal %>%
+  filter(HomeTeam == 'Arsenal' && FTR == 'D')
+ArsenalHomeDraws <- nrow(Arsenal_Home_Draws)
+ArsenalHomeDraws
+
+# Arsenal Away Draws
+Arsenal_Away_Draws <- Arsenal %>%
+  filter(AwayTeam == 'Arsenal' && FTR == 'D')
+ArsenalAwayDraws <- nrow(Arsenal_Away_Draws)
+ArsenalAwayDraws
   
 # Arsenal Record
 ArsenalWins <- ArsenalHomeWins + ArsenalAwayWins
@@ -57,9 +73,8 @@ ArsenalWins
 ArsenalLosses <- ArsenalHomeLosses + ArsenalAwayLosses
 ArsenalLosses
 
-ArsenalHomeDraws <- ArsenalHomeGames - ArsenalHomeWins - ArsenalHomeLosses
-ArsenalAwayDraws <- ArsenalAwayGames - ArsenalAwayWins - ArsenalAwayLosses
 ArsenalDraws <- ArsenalHomeDraws + ArsenalAwayDraws
+ArsenalDraws
 
 #WDL
 ArsenalOverallRecord <- paste(ArsenalWins, ArsenalDraws, ArsenalLosses, sep = "-")
@@ -70,12 +85,12 @@ ArsenalAwayRecord <- paste(ArsenalAwayWins, ArsenalAwayDraws, ArsenalAwayLosses,
 # Overall Record
 ArsenalOverallRecord
 
-# Home Data
+# Home Record + Data
 ArsenalHomeRecord
 ArsenalHomeWinPayout
 ArsenalOpponentHomePayout
 
-# Away Data
+# Away Record + Data
 ArsenalAwayRecord
 ArsenalAwayWinPayout
 ArsenalOpponentAwayPayout
