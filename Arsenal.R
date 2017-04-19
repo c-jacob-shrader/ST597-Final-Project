@@ -1,4 +1,8 @@
 # Arsenal Data Analysis Calculations and Visualization
+library(tidyverse)
+library(ggplot2)
+wd(ST597 Final Project)
+load('DataSet.RData')
 
 # Arsenal Home Analysis
 Arsenal_Home <- Arsenal %>%
@@ -94,3 +98,16 @@ ArsenalOpponentHomePayout
 ArsenalAwayRecord
 ArsenalAwayWinPayout
 ArsenalOpponentAwayPayout
+
+# Payout Betting Purely on Arsenal Winning at Home
+ArsenalHomeBetting <- ArsenalHomeWins*(ArsenalHomeWinPayout-1) - 
+  ArsenalHomeDraws - ArsenalHomeLosses
+ArsenalHomeBetting
+
+# Payout Betting Purely on Arsenal Winning Away
+ArsenalAwayBetting <- ArsenalAwayWins*(ArsenalAwayWinPayout-1) - 
+  ArsenalAwayDraws - ArsenalAwayLosses
+ArsenalAwayBetting
+
+ArsenalWinnings <- ArsenalHomeBetting + ArsenalAwayBetting
+ArsenalWinnings
