@@ -1,1 +1,2 @@
 load("/Users/mrjshrader/ST597 Final Project/DataSets_FullyCombined.RData")
+load("/Users/mrjshrader/ST597 Final Project/DataSet.RData")
