@@ -3,4 +3,5 @@
 
 library(tidyverse)
 library(ggplot2)
-load('DataSets_FullyCombined.RData')
+wd(ST597 Final Project)
+load('DataSet.RData')

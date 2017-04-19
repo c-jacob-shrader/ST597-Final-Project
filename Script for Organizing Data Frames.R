@@ -1,3 +1,28 @@
+# This script loads the packages and data we'll need for the analyis. 
+
+library(tidyverse)
+library(ggplot2)
+wd(ST597 Final Project)
+load('DataSet.RData')
+
+# Seasons <- c(X2000_2001, X2001_2002, X2002_2003, X2003_2004, X2004_2005, X2005_2006, 
+#             X2006_2007, X2007_2008, X2008_2009, X2009_2010, X2010_2011, X2011_2012, 
+#            X2012_2013, X2013_2014, X2014_2015)
+#save(Seasons, file = 'Seasons.RData')
+#
+#Seasons_Adjusted <- c(OO5_OO6_adjusted, OO6_OO7_adjusted, OO7_OO8_adjusted, OO8_OO9_adjusted, 
+#                      OO9_O10_adjusted, O10_O11_adjusted, O11_O12_adjusted, O12_O13_adjusted, 
+#                      O13_O14_adjusted, O14_O15_adjusted)
+#save(Seasons_Adjusted, file = 'Seasons_Adjusted.RData')
+#
+#Teams <- c(Arsenal, Aston_Villa, Birmingham, Blackbrun, Blackpool, Bolton, 
+#                 Burnley, Cardiff, Charlton, Chelsea, Crystal_Palace, Derby, Everton, 
+#                 Fulham, Hull, Leicester, Liverpool, Man_United, Manchester_City, 
+#                 Middlesborough, Newcastle, Norwich, Portsmouth, QPR, Reading, 
+#                 Sheffield_United, Southampton, Stoke, Sunderland, Swansea, Tottenham, 
+#                 Watford, West_Brom, West_Ham, Wigan, Wolves)
+#save(Teams,file = 'Teams.RData') 
+
 # This will take the raw data from each season( X2005_2006, X2006_2007, etc.)
 # and break each season down into a more usable data frame for our use.
 
