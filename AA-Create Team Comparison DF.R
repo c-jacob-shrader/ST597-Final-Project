@@ -47,4 +47,5 @@ Winnings <- c(ArsenalWinnings, Aston_VillaWinnings, BirminghamWinnings, Blackbur
               TottenhamWinnings, WatfordWinnings, West_BromWinnings, West_HamWinnings, 
               WiganWinnings, WolvesWinnings)
 
-team.comparison <- data.frame(Team, Wins, Draws, Losses, Winnings)
+team.comparison <- data.frame(Team, Wins, Draws, Losses, Winnings)%>%
+  arrange(desc(Winnings))
