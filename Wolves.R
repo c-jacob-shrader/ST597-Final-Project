@@ -49,7 +49,7 @@ WolvesAwayWinPayout
 # Wolves Away Losses
 Wolves_Away_Losses <- Wolves %>%
   filter(AwayTeam == 'Wolves' && FTR == 'H')
-WolvesAwayLosses <- nrow(Wolves_Home_Losses)
+WolvesAwayLosses <- nrow(Wolves_Away_Losses)
 WolvesAwayLosses
 
 WolvesAwayLossPayout <- mean(Wolves_Away_Losses$BbAvA)

@@ -49,7 +49,7 @@ Man_UnitedAwayWinPayout
 # Man_United Away Losses
 Man_United_Away_Losses <- Man_United %>%
   filter(AwayTeam == 'Man United' && FTR == 'H')
-Man_UnitedAwayLosses <- nrow(Man_United_Home_Losses)
+Man_UnitedAwayLosses <- nrow(Man_United_Away_Losses)
 Man_UnitedAwayLosses
 
 Man_UnitedAwayLossPayout <- mean(Man_United_Away_Losses$BbAvA)

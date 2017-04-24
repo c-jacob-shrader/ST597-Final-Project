@@ -49,7 +49,7 @@ BlackpoolAwayWinPayout
 # Blackpool Away Losses
 Blackpool_Away_Losses <- Blackpool %>%
   filter(AwayTeam == 'Blackpool' && FTR == 'H')
-BlackpoolAwayLosses <- nrow(Blackpool_Home_Losses)
+BlackpoolAwayLosses <- nrow(Blackpool_Away_Losses)
 BlackpoolAwayLosses
 
 BlackpoolAwayLossPayout <- mean(Blackpool_Away_Losses$BbAvA)

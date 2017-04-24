@@ -49,7 +49,7 @@ WiganAwayWinPayout
 # Wigan Away Losses
 Wigan_Away_Losses <- Wigan %>%
   filter(AwayTeam == 'Wigan' && FTR == 'H')
-WiganAwayLosses <- nrow(Wigan_Home_Losses)
+WiganAwayLosses <- nrow(Wigan_Away_Losses)
 WiganAwayLosses
 
 WiganAwayLossPayout <- mean(Wigan_Away_Losses$BbAvA)

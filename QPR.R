@@ -49,7 +49,7 @@ QPRAwayWinPayout
 # QPR Away Losses
 QPR_Away_Losses <- QPR %>%
   filter(AwayTeam == 'QPR' && FTR == 'H')
-QPRAwayLosses <- nrow(QPR_Home_Losses)
+QPRAwayLosses <- nrow(QPR_Away_Losses)
 QPRAwayLosses
 
 QPRAwayLossPayout <- mean(QPR_Away_Losses$BbAvA)

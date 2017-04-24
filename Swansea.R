@@ -49,7 +49,7 @@ SwanseaAwayWinPayout
 # Swansea Away Losses
 Swansea_Away_Losses <- Swansea %>%
   filter(AwayTeam == 'Swansea' && FTR == 'H')
-SwanseaAwayLosses <- nrow(Swansea_Home_Losses)
+SwanseaAwayLosses <- nrow(Swansea_Away_Losses)
 SwanseaAwayLosses
 
 SwanseaAwayLossPayout <- mean(Swansea_Away_Losses$BbAvA)

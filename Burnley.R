@@ -49,7 +49,7 @@ BurnleyAwayWinPayout
 # Burnley Away Losses
 Burnley_Away_Losses <- Burnley %>%
   filter(AwayTeam == 'Burnley' && FTR == 'H')
-BurnleyAwayLosses <- nrow(Burnley_Home_Losses)
+BurnleyAwayLosses <- nrow(Burnley_Away_Losses)
 BurnleyAwayLosses
 
 BurnleyAwayLossPayout <- mean(Burnley_Away_Losses$BbAvA)

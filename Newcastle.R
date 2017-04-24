@@ -49,7 +49,7 @@ NewcastleAwayWinPayout
 # Newcastle Away Losses
 Newcastle_Away_Losses <- Newcastle %>%
   filter(AwayTeam == 'Newcastle' && FTR == 'H')
-NewcastleAwayLosses <- nrow(Newcastle_Home_Losses)
+NewcastleAwayLosses <- nrow(Newcastle_Away_Losses)
 NewcastleAwayLosses
 
 NewcastleAwayLossPayout <- mean(Newcastle_Away_Losses$BbAvA)

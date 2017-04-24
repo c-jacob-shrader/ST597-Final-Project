@@ -49,7 +49,7 @@ FulhamAwayWinPayout
 # Fulham Away Losses
 Fulham_Away_Losses <- Fulham %>%
   filter(AwayTeam == 'Fulham' && FTR == 'H')
-FulhamAwayLosses <- nrow(Fulham_Home_Losses)
+FulhamAwayLosses <- nrow(Fulham_Away_Losses)
 FulhamAwayLosses
 
 FulhamAwayLossPayout <- mean(Fulham_Away_Losses$BbAvA)

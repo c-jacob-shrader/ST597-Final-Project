@@ -49,7 +49,7 @@ LeicesterAwayWinPayout
 # Leicester Away Losses
 Leicester_Away_Losses <- Leicester %>%
   filter(AwayTeam == 'Leicester' && FTR == 'H')
-LeicesterAwayLosses <- nrow(Leicester_Home_Losses)
+LeicesterAwayLosses <- nrow(Leicester_Away_Losses)
 LeicesterAwayLosses
 
 LeicesterAwayLossPayout <- mean(Leicester_Away_Losses$BbAvA)

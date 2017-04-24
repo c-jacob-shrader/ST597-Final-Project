@@ -49,7 +49,7 @@ ArsenalAwayWinPayout
 # Arsenal Away Losses
 Arsenal_Away_Losses <- Arsenal %>%
   filter(AwayTeam == 'Arsenal' && FTR == 'H')
-ArsenalAwayLosses <- nrow(Arsenal_Home_Losses)
+ArsenalAwayLosses <- nrow(Arsenal_Away_Losses)
 ArsenalAwayLosses
 
 ArsenalAwayLossPayout <- mean(Arsenal_Away_Losses$BbAvA)

@@ -49,7 +49,7 @@ CardiffAwayWinPayout
 # Cardiff Away Losses
 Cardiff_Away_Losses <- Cardiff %>%
   filter(AwayTeam == 'Cardiff' && FTR == 'H')
-CardiffAwayLosses <- nrow(Cardiff_Home_Losses)
+CardiffAwayLosses <- nrow(Cardiff_Away_Losses)
 CardiffAwayLosses
 
 CardiffAwayLossPayout <- mean(Cardiff_Away_Losses$BbAvA)

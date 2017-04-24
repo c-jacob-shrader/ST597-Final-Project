@@ -49,7 +49,7 @@ CharltonAwayWinPayout
 # Charlton Away Losses
 Charlton_Away_Losses <- Charlton %>%
   filter(AwayTeam == 'Charlton' && FTR == 'H')
-CharltonAwayLosses <- nrow(Charlton_Home_Losses)
+CharltonAwayLosses <- nrow(Charlton_Away_Losses)
 CharltonAwayLosses
 
 CharltonAwayLossPayout <- mean(Charlton_Away_Losses$BbAvA)

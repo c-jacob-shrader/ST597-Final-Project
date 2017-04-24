@@ -49,7 +49,7 @@ Manchester_CityAwayWinPayout
 # Manchester_City Away Losses
 Manchester_City_Away_Losses <- Manchester_City %>%
   filter(AwayTeam == 'Man City' && FTR == 'H')
-Manchester_CityAwayLosses <- nrow(Manchester_City_Home_Losses)
+Manchester_CityAwayLosses <- nrow(Manchester_City_Away_Losses)
 Manchester_CityAwayLosses
 
 Manchester_CityAwayLossPayout <- mean(Manchester_City_Away_Losses$BbAvA)

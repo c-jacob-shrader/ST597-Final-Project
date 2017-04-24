@@ -49,7 +49,7 @@ ChelseaAwayWinPayout
 # Chelsea Away Losses
 Chelsea_Away_Losses <- Chelsea %>%
   filter(AwayTeam == 'Chelsea' && FTR == 'H')
-ChelseaAwayLosses <- nrow(Chelsea_Home_Losses)
+ChelseaAwayLosses <- nrow(Chelsea_Away_Losses)
 ChelseaAwayLosses
 
 ChelseaAwayLossPayout <- mean(Chelsea_Away_Losses$BbAvA)

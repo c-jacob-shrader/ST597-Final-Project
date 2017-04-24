@@ -49,7 +49,7 @@ EvertonAwayWinPayout
 # Everton Away Losses
 Everton_Away_Losses <- Everton %>%
   filter(AwayTeam == 'Everton' && FTR == 'H')
-EvertonAwayLosses <- nrow(Everton_Home_Losses)
+EvertonAwayLosses <- nrow(Everton_Away_Losses)
 EvertonAwayLosses
 
 EvertonAwayLossPayout <- mean(Everton_Away_Losses$BbAvA)

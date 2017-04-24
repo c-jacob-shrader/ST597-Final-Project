@@ -49,7 +49,7 @@ Crystal_PalaceAwayWinPayout
 # Crystal_Palace Away Losses
 Crystal_Palace_Away_Losses <- Crystal_Palace %>%
   filter(AwayTeam == 'Crystal Palace' && FTR == 'H')
-Crystal_PalaceAwayLosses <- nrow(Crystal_Palace_Home_Losses)
+Crystal_PalaceAwayLosses <- nrow(Crystal_Palace_Away_Losses)
 Crystal_PalaceAwayLosses
 
 Crystal_PalaceAwayLossPayout <- mean(Crystal_Palace_Away_Losses$BbAvA)

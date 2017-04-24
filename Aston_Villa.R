@@ -49,7 +49,7 @@ Aston_VillaAwayWinPayout
 # Aston_Villa Away Losses
 Aston_Villa_Away_Losses <- Aston_Villa %>%
   filter(AwayTeam == 'Aston Villa' && FTR == 'H')
-Aston_VillaAwayLosses <- nrow(Aston_Villa_Home_Losses)
+Aston_VillaAwayLosses <- nrow(Aston_Villa_Away_Losses)
 Aston_VillaAwayLosses
 
 Aston_VillaAwayLossPayout <- mean(Aston_Villa_Away_Losses$BbAvA)

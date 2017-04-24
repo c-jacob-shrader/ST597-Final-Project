@@ -49,7 +49,7 @@ HullAwayWinPayout
 # Hull Away Losses
 Hull_Away_Losses <- Hull %>%
   filter(AwayTeam == 'Hull' && FTR == 'H')
-HullAwayLosses <- nrow(Hull_Home_Losses)
+HullAwayLosses <- nrow(Hull_Away_Losses)
 HullAwayLosses
 
 HullAwayLossPayout <- mean(Hull_Away_Losses$BbAvA)

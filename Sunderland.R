@@ -49,7 +49,7 @@ SunderlandAwayWinPayout
 # Sunderland Away Losses
 Sunderland_Away_Losses <- Sunderland %>%
   filter(AwayTeam == 'Sunderland' && FTR == 'H')
-SunderlandAwayLosses <- nrow(Sunderland_Home_Losses)
+SunderlandAwayLosses <- nrow(Sunderland_Away_Losses)
 SunderlandAwayLosses
 
 SunderlandAwayLossPayout <- mean(Sunderland_Away_Losses$BbAvA)

@@ -49,7 +49,7 @@ LiverpoolAwayWinPayout
 # Liverpool Away Losses
 Liverpool_Away_Losses <- Liverpool %>%
   filter(AwayTeam == 'Liverpool' && FTR == 'H')
-LiverpoolAwayLosses <- nrow(Liverpool_Home_Losses)
+LiverpoolAwayLosses <- nrow(Liverpool_Away_Losses)
 LiverpoolAwayLosses
 
 LiverpoolAwayLossPayout <- mean(Liverpool_Away_Losses$BbAvA)

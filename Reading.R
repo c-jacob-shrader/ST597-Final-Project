@@ -49,7 +49,7 @@ ReadingAwayWinPayout
 # Reading Away Losses
 Reading_Away_Losses <- Reading %>%
   filter(AwayTeam == 'Reading' && FTR == 'H')
-ReadingAwayLosses <- nrow(Reading_Home_Losses)
+ReadingAwayLosses <- nrow(Reading_Away_Losses)
 ReadingAwayLosses
 
 ReadingAwayLossPayout <- mean(Reading_Away_Losses$BbAvA)

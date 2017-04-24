@@ -49,7 +49,7 @@ West_BromAwayWinPayout
 # West_Brom Away Losses
 West_Brom_Away_Losses <- West_Brom %>%
   filter(AwayTeam == 'West Brom' && FTR == 'H')
-West_BromAwayLosses <- nrow(West_Brom_Home_Losses)
+West_BromAwayLosses <- nrow(West_Brom_Away_Losses)
 West_BromAwayLosses
 
 West_BromAwayLossPayout <- mean(West_Brom_Away_Losses$BbAvA)

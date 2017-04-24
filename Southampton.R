@@ -49,7 +49,7 @@ SouthamptonAwayWinPayout
 # Southampton Away Losses
 Southampton_Away_Losses <- Southampton %>%
   filter(AwayTeam == 'Southampton' && FTR == 'H')
-SouthamptonAwayLosses <- nrow(Southampton_Home_Losses)
+SouthamptonAwayLosses <- nrow(Southampton_Away_Losses)
 SouthamptonAwayLosses
 
 SouthamptonAwayLossPayout <- mean(Southampton_Away_Losses$BbAvA)

@@ -49,7 +49,7 @@ TottenhamAwayWinPayout
 # Tottenham Away Losses
 Tottenham_Away_Losses <- Tottenham %>%
   filter(AwayTeam == 'Tottenham' && FTR == 'H')
-TottenhamAwayLosses <- nrow(Tottenham_Home_Losses)
+TottenhamAwayLosses <- nrow(Tottenham_Away_Losses)
 TottenhamAwayLosses
 
 TottenhamAwayLossPayout <- mean(Tottenham_Away_Losses$BbAvA)

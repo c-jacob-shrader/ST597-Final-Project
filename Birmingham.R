@@ -49,7 +49,7 @@ BirminghamAwayWinPayout
 # Birmingham Away Losses
 Birmingham_Away_Losses <- Birmingham %>%
   filter(AwayTeam == 'Birmingham' && FTR == 'H')
-BirminghamAwayLosses <- nrow(Birmingham_Home_Losses)
+BirminghamAwayLosses <- nrow(Birmingham_Away_Losses)
 BirminghamAwayLosses
 
 BirminghamAwayLossPayout <- mean(Birmingham_Away_Losses$BbAvA)

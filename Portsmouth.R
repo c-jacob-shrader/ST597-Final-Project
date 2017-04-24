@@ -49,7 +49,7 @@ PortsmouthAwayWinPayout
 # Portsmouth Away Losses
 Portsmouth_Away_Losses <- Portsmouth %>%
   filter(AwayTeam == 'Portsmouth' && FTR == 'H')
-PortsmouthAwayLosses <- nrow(Portsmouth_Home_Losses)
+PortsmouthAwayLosses <- nrow(Portsmouth_Away_Losses)
 PortsmouthAwayLosses
 
 PortsmouthAwayLossPayout <- mean(Portsmouth_Away_Losses$BbAvA)

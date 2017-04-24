@@ -49,7 +49,7 @@ NorwichAwayWinPayout
 # Norwich Away Losses
 Norwich_Away_Losses <- Norwich %>%
   filter(AwayTeam == 'Norwich' && FTR == 'H')
-NorwichAwayLosses <- nrow(Norwich_Home_Losses)
+NorwichAwayLosses <- nrow(Norwich_Away_Losses)
 NorwichAwayLosses
 
 NorwichAwayLossPayout <- mean(Norwich_Away_Losses$BbAvA)

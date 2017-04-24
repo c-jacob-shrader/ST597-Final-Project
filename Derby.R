@@ -49,7 +49,7 @@ DerbyAwayWinPayout
 # Derby Away Losses
 Derby_Away_Losses <- Derby %>%
   filter(AwayTeam == 'Derby' && FTR == 'H')
-DerbyAwayLosses <- nrow(Derby_Home_Losses)
+DerbyAwayLosses <- nrow(Derby_Away_Losses)
 DerbyAwayLosses
 
 DerbyAwayLossPayout <- mean(Derby_Away_Losses$BbAvA)

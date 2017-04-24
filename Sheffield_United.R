@@ -49,7 +49,7 @@ Sheffield_UnitedAwayWinPayout
 # Sheffield_United Away Losses
 Sheffield_United_Away_Losses <- Sheffield_United %>%
   filter(AwayTeam == 'Sheffield United' && FTR == 'H')
-Sheffield_UnitedAwayLosses <- nrow(Sheffield_United_Home_Losses)
+Sheffield_UnitedAwayLosses <- nrow(Sheffield_United_Away_Losses)
 Sheffield_UnitedAwayLosses
 
 Sheffield_UnitedAwayLossPayout <- mean(Sheffield_United_Away_Losses$BbAvA)

@@ -49,7 +49,7 @@ BoltonAwayWinPayout
 # Bolton Away Losses
 Bolton_Away_Losses <- Bolton %>%
   filter(AwayTeam == 'Bolton' && FTR == 'H')
-BoltonAwayLosses <- nrow(Bolton_Home_Losses)
+BoltonAwayLosses <- nrow(Bolton_Away_Losses)
 BoltonAwayLosses
 
 BoltonAwayLossPayout <- mean(Bolton_Away_Losses$BbAvA)

@@ -49,7 +49,7 @@ WatfordAwayWinPayout
 # Watford Away Losses
 Watford_Away_Losses <- Watford %>%
   filter(AwayTeam == 'Watford' && FTR == 'H')
-WatfordAwayLosses <- nrow(Watford_Home_Losses)
+WatfordAwayLosses <- nrow(Watford_Away_Losses)
 WatfordAwayLosses
 
 WatfordAwayLossPayout <- mean(Watford_Away_Losses$BbAvA)

@@ -49,7 +49,7 @@ StokeAwayWinPayout
 # Stoke Away Losses
 Stoke_Away_Losses <- Stoke %>%
   filter(AwayTeam == 'Stoke' && FTR == 'H')
-StokeAwayLosses <- nrow(Stoke_Home_Losses)
+StokeAwayLosses <- nrow(Stoke_Away_Losses)
 StokeAwayLosses
 
 StokeAwayLossPayout <- mean(Stoke_Away_Losses$BbAvA)
